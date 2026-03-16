@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /SITE_HELPIF/aplicativo/
+RewriteRule ^$ /SITE_HELPIF/aplicativo/index.html [L]
+RewriteRule ^([a-zA-Z0-9/_-]+)$ /SITE_HELPIF/aplicativo/index.html [L]

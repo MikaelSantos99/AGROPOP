@@ -1,0 +1,149 @@
+/* Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #00695d;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Container dos aplicativos */
+.app-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px;
+    flex-wrap: wrap; /* Responsividade */
+}
+
+.app-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.app-card:hover {
+    transform: scale(1.05);
+}
+
+/* Logo dos aplicativos */
+.app-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00695d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+/* Seção Sobre os Autores */
+.authors {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.authors h2 {
+    font-size: 2rem;
+    color: #00695d;
+    margin-bottom: 20px;
+}
+
+.author-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.author-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.author-card:hover {
+    transform: scale(1.05);
+}
+
+.author-img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.author-card h3 {
+    font-size: 1.2rem;
+    color: #00695d;
+}
+
+.author-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #00695d;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .app-container {
+        flex-direction: column; /* Cards em coluna em telas menores */
+        align-items: center;
+    }
+
+    .app-card {
+        width: 80%; /* Aumenta a largura dos cards em telas pequenas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamanho de título menor em telas pequenas */
+    }
+
+    .author-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

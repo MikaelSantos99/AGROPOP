@@ -1,0 +1,23 @@
+crie um arquivo com o nome de ".htaccess" em uma extensão de "Arquivo HTACESS" dentro da pasta "M:\Documents\ARQUIVOS CURSOS E FACULDADE\PROJETOS\PIPA 2024\SITE PRINCIPAL\SITE_HELPIF\aplicativo". Isso servirá para abrir em navegadores o aplicativo.
+
+Dentro do arquivo .htaccess deve haver a escrita:
+
+RewriteEngine On
+RewriteBase /SITE_HELPIF/aplicativo/
+RewriteRule ^$ /SITE_HELPIF/aplicativo/index.html [L]
+RewriteRule ^([a-zA-Z0-9/_-]+)$ /SITE_HELPIF/aplicativo/index.html [L]
+
+Logo depois deve renomear o arquivo html do aplicativo dentro da pasta "M:\Documents\ARQUIVOS CURSOS E FACULDADE\PROJETOS\PIPA 2024\SITE PRINCIPAL\SITE_HELPIF\aplicativo"
+
+Assim:
+
+  <base href="/SITE_HELPIF/aplicativo/">
+
+  <script src="/SITE_HELPIF/aplicativo/flutter_bootstrap.js" async></script>
+
+Sendo que essas alterações estão ligadas diretamente no domínio:
+
+   "https://agropop.click/SITE_HELPIF/aplicativo/index.html"
+
+
+O site só abre se os diretórios estiverem corretamente configurados.
